@@ -13,7 +13,7 @@ jobs:
         id: cached-deps
         uses: ./.github/actions/cached-deps/
         with: 
-          caching: 'false'
+          caching: 'true'
       - name: Output information  
         run: echo "Cached outputs?  ${{ steps.cached-deps.outputs.used-cache }}"
       - name: Lint code
